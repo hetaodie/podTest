@@ -7,6 +7,5 @@ Pod::Spec.new do |s|
   s.authors      = { 'tangjr' => 'hetaodie@gmail.com'}
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/hetaodie/podTest.git", :tag => s.version }
-  s.source_files = 'podTest', 'podTest/**/*.{h,m}'
-  s.requires_arc = true
+  s.source_files = 'RTCAVCaptureDemo'
 end

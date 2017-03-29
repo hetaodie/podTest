@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2h-6e-ilk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.12941176469999999" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z0-ta-xdf">
+                                <rect key="frame" x="46" y="373.5" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BBp-aN-tAc"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qir-Yt-ich"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfy-M8-xWh">
+                                <rect key="frame" x="285" y="373" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="uOV-St-OTH"/>
+                                </constraints>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Llo-dc-ffr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R2h-6e-ilk" secondAttribute="trailing" id="7oi-Mc-53Y"/>
+                            <constraint firstAttribute="trailing" secondItem="rfy-M8-xWh" secondAttribute="trailing" constant="30" id="Bfn-Ie-5FU"/>
+                            <constraint firstItem="7z0-ta-xdf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="KFV-4G-mwW"/>
+                            <constraint firstItem="7z0-ta-xdf" firstAttribute="top" secondItem="R2h-6e-ilk" secondAttribute="bottom" constant="40" id="MDD-vH-M8Y"/>
+                            <constraint firstItem="R2h-6e-ilk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XCy-c3-sMB"/>
+                            <constraint firstItem="R2h-6e-ilk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yyk-w3-fOs"/>
+                            <constraint firstItem="R2h-6e-ilk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="bGA-k3-dM9"/>
+                            <constraint firstItem="rfy-M8-xWh" firstAttribute="top" secondItem="R2h-6e-ilk" secondAttribute="bottom" constant="40" id="kPi-Ar-qLW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="R2h-6e-ilk" id="0j1-ZS-zGo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
