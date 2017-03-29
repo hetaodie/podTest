@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.authors      = { 'tangjr' => 'hetaodie@gmail.com'}
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/hetaodie/podTest.git", :tag => s.version, :submodules => true }
-  s.source_files = 'podTest/RTCAVCaptureDemo'
+  s.source_files = 'RTCAVCaptureDemo/captureSession/*.{h,m}'
 end
